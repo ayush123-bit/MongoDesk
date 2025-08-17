@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MongoDesk
 
-## Getting Started
+MongoDesk is a web-based application that allows users to upload `.txt` or `.csv` files and send multiple emails efficiently.  
+It is designed with simplicity and scalability in mind, providing a clean interface for bulk email handling.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
+- Upload `.txt` or `.csv` files containing email addresses.
+- Send multiple emails in one go.
+- Clean and minimal user interface.
+- Deployed with **Vercel** for easy access.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📂 Tech Stack
+- **Frontend**: Next.js, React, TailwindCSS
+- **Backend**: Node.js, Express.js, MongoDB
+- **Deployment**: Vercel (Frontend), Render/Other (Backend)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ⚙️ Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ayush123-bit/MongoDesk.git
+   cd MongoDesk
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install dependencies for frontend and backend:
+   ```bash
+   cd frontend && npm install
+   cd ../backend && npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Create a `.env` file in both frontend and backend with the required configurations.
 
-## Deploy on Vercel
+4. Run the development servers:
+   ```bash
+   # Frontend
+   cd frontend && npm run dev
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   # Backend
+   cd backend && npm start
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🌐 Deployment
+The application is deployed on Vercel:  
+👉 [MongoDesk Live](https://mongo-desk-frontend.vercel.app/)
+
+---
+
+## 🔑 Challenges Faced
+1. Handling bulk email sending without hitting provider rate limits.  
+2. Ensuring file validation and correct parsing for `.txt` and `.csv`.  
+3. Managing environment configurations across local and production.  
+4. Keeping UI minimal yet functional for better user experience.  
+
+---
+
+## 📌 Future Enhancements
+- Add email templates with customization options.  
+- Support for PDF file parsing and processing.  
+- Admin dashboard for monitoring email history.  
+
+---
+
+## 📝 License
+This project is licensed under the MIT License.
